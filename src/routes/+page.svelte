@@ -13,6 +13,6 @@ import FAQs from "../components/FAQs.svelte";
     <Hero />
     <Product />
     <Reviews />
-    <FAQs/>
-    <Conversion/>
+    <!-- <FAQs/> -->
+    <!-- <Conversion/> -->
 </main>

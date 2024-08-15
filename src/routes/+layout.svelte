@@ -34,7 +34,7 @@
             <p
                 class="duration-200 group-hover:pl-2 poppins text-3xl font-semibold"
             >
-                Product <i class="fa-solid fa-chevron-right text-xl pl-4" />
+                Project <i class="fa-solid fa-chevron-right text-xl pl-4" />
             </p>
         </button>
         <button
@@ -47,7 +47,7 @@
                 Reviews <i class="fa-solid fa-chevron-right text-xl pl-4" />
             </p>
         </button>
-        <button
+        <!-- <button
             on:click={() => reroute("#faqs")}
             class="border-none outline-none p-2 group duration-200 cursor-pointer text-left"
         >
@@ -56,7 +56,7 @@
             >
                 FAQs <i class="fa-solid fa-chevron-right text-xl pl-4" />
             </p>
-        </button>
+        </button> -->
     </div>
     <div class="flex flex-col items-center justify-center">
         <CtAs/>
@@ -65,7 +65,7 @@
 {/if}
 
 {#if y > outerHeight}
-  <div class="bg-white fixed top-0 left-0 w-full flex-col z-20 px-4 fadeIn">
+  <div class="bg-white fixed top-0 left-0 w-full flex-col z-20 px-4 fadeIn  border-b-green-950 border-b-2 border-opacity-50">
     <Header/>
   </div>
 {/if}

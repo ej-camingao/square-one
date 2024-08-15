@@ -25,7 +25,7 @@
 <div class="h-[1.5px] bg-slate-950 w-1/4 mr-auto mb-4 mt-2"></div>
 <div class="flex items-center flex-wrap gap-2 text-xs sm:text-sm mb-4">
     {#each reviewItem.features as keywork}
-        <div class="p-1 py-0.5 rounded-md border border-solid border-indigo-400 bg-indigo-50">
+        <div class="p-1 py-0.5 rounded-md border border-solid border-black bg-green-300">
             <p>{keywork}</p>
         </div>
     {/each}

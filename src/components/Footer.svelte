@@ -1,32 +1,29 @@
-<footer class="py-16 sm:py-20 md:py-24 px-4 md:px-8">
+<footer class="py-16 sm:py-20 md:py-24 px-4 md:px-8 bg-green-950 text-white items-center justify-center">
     <div
         class="max-w-[1200px] mx-auto w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 text-base"
     >
         <div class="flex flex-col gap-4 md:col-span-2">
             <h1 class="font-semibold">
-                Swoley <span class="text-indigo-400">Moley</span>
+                Square One <span class="text-green-700">Builders </span>
             </h1>
-            <p>©2023 SWOLEY MOLEY LTD. All rights reserved.</p>
+            <p>©2024 SQUARE ONE BUILDERS. <br/>All rights reserved.</p>
         </div>
         <div class="flex flex-col gap-4">
-            <p class="font-bold poppins text-base sm:text-lg">Support</p>
-            <a
-                href=""
-                target="_blank"
-                class="cursor-pointer hover:text-indigo-400 duration-200"
-            >
-                Contact Us</a
-            >
+            <p class="font-bold poppins text-base sm:text-lg">Contact</p>
+            <p>Canyon Rd., Beverly Hills, Lahug, Cebu City<br/>
+            032-342 0633<br/>
+            squareone.builders@yahoo.com
+            </p>          
         </div>
         <div class="flex flex-col gap-4">
-            <p class="font-bold poppins text-base sm:text-lg">Research</p>
+            <!-- <p class="font-bold poppins text-base sm:text-lg">Research</p>
             <a
                 href=""
                 target="_blank"
                 class="cursor-pointer hover:text-indigo-400 duration-200"
             >
                 Read the science</a
-            >
+            > -->
         </div>
         <div class="flex flex-col gap-4">
             <p class="font-bold poppins text-base sm:text-lg">Follow Us</p>

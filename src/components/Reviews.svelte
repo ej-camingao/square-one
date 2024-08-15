@@ -8,65 +8,44 @@
     let reviewsList = [
         {
             name: "John Doe",
-            review: "Swoley Moley has been a game-changer for my fitness journey! The personalized workout plans and progress tracking tools are amazing, and the community keeps me motivated. I especially love the feature that recommends new workouts based on my goals and strengths.",
+            review: "Square One Builders exceeded our expectations on our home renovation project. Their attention to detail and commitment to quality were evident from start to finish. Highly recommend!",
             features: [
-                "Personalized workout plans",
-                "Community features",
-                "Workout recommendation system",
+                "Excellent Service"
             ],
         },
         {
             name: "Jane Smith",
-            review: "Swoley Moley is the most user-friendly fitness app I've ever used. The interface is clean and intuitive, and the exercises are easy to follow. I've already seen significant results in just a few weeks. My favorite features are the guided workouts and the ability to log my meals and track my progress.",
+            review: "We couldn't be happier with the commercial space Square One Builders completed for us. They delivered on time and on budget, and the finished product is fantastic. Their professionalism is unmatched.",
             features: [
-                "Guided workouts",
-                "Meal logging and tracking",
-                "User-friendly interface",
+                "Budget Friendly",
             ],
         },
         {
             name: "Michael Brown",
-            review: "Swoley Moley is the best investment I've made in my health. It's helped me build muscle, lose weight, and improve my overall fitness level. The variety of workout routines and challenges keeps me engaged, and the nutrition tips are super helpful. I highly recommend this app to anyone looking to get in shape!",
+            review: "The team at Square One Builders did an outstanding job on our new bridge construction. Their expertise and efficient project management ensured everything was completed safely and on schedule.",
             features: [
-                "Variety of workout routines and challenges",
-                "Nutrition tips",
-                "Progress tracking and challenges",
+                "Accomodating"
             ],
         },
         {
             name: "Sarah Williams",
-            review: "I'm a busy mom of two, and Swoley Moley has been a lifesaver! It helps me fit in quick and effective workouts even when I'm short on time. I love the timer feature that keeps me on track, and the workout variety ensures I never get bored.",
+            review: "Square One Builders transformed our outdated office building into a modern, functional space. Their innovative design solutions and top-notch craftsmanship made all the difference.",
             features: [
-                "Quick and effective workouts",
-                "Timer feature",
-                "Variety of workouts",
-            ],
-        },
-        {
-            name: "David Lee",
-            review: "As a seasoned athlete, I was skeptical about any fitness app. But Swoley Moley has surprised me! It offers advanced workout programs and allows me to customize my routines to fit my specific needs. The data analysis is fantastic, helping me track my progress and optimize my performance.",
-            features: [
-                "Advanced workout programs",
-                "Customization options",
-                "Detailed data analysis",
+                "Attention to Detail"
             ],
         },
         {
             name: "Ashley Johnson",
-            review: "Swoley Moley has helped me overcome my fear of going to the gym. The encouraging community and supportive environment have made me feel comfortable and confident. I love the social features that allow me to connect with other fitness enthusiasts and share my progress.",
+            review: "We entrusted Square One Builders with our school renovation, and they delivered exceptional results. The project was completed with minimal disruption, and the new facilities are a tremendous improvement.",
             features: [
-                "Supportive community",
-                "Social features",
-                "Encouraging environment",
+                "Timely Outputs",
             ],
         },
         {
             name: "Mark Robinson",
-            review: "Swoley Moley is more than just a fitness app; it's a lifestyle change. It's helped me develop healthy habits and make better choices about my diet and exercise. I'm incredibly grateful for this app and the positive impact it's had on my life.",
+            review: "Square One Builders handled our highway expansion project with remarkable efficiency and skill. Their dedication to quality and safety was evident throughout, making the entire process smooth and successful.",
             features: [
-                "Focus on healthy habits",
-                "Nutritional guidance",
-                "Positive lifestyle impact",
+                "Efficient"
             ],
         },
     ];
@@ -83,7 +62,7 @@
             <h3
                 class="text-4xl sm:text-5xl md:text-6xl max-w-[1000px] mx-auto w-full font-semibold text-center"
             >
-                See What <span class="text-indigo-400">Others</span> Have To Say
+                See What <span class="text-green-700">Others</span> Have To Say
             </h3>
         </div>
         <div class="flex flex-col md:flex-row gap-8 w-fit mx-auto">
@@ -92,7 +71,7 @@
                     <ReviewCard {reviewItem} left={true} {index} />
                 {/each}
             </div>
-            <div class="w-[1px] bg-slate-950 hidden md:flex"></div>
+            <div class="w-[1px] bg-green-500 hidden md:flex"></div>
             <div class="flex flex-col gap-8">
                 {#each lim ? reviewsList.slice(0, 4) : reviewsList as reviewItem, index}
                     <ReviewCard {reviewItem} {index} />
@@ -104,9 +83,16 @@
         </button>
         <div class="flex flex-col gap-10">
             <p class="mx-auto text-lg sm:text-xl md:text-2xl font-semibold">
-                Trusted by 1,349 Swoldiers
+                Trusted by
             </p>
-            <Stars />
+            <div class="flex flex-wrap justify-center gap-8">
+                <!-- Example logos -->
+                <img src="assets/comLogo1.png" alt="Company 1 Logo" class="h-12 md:h-16 object-contain">
+                <img src="assets/comLogo2.png" alt="Company 2 Logo" class="h-12 md:h-16 object-contain">
+                <img src="assets/comLogo3.png" alt="Company 3 Logo" class="h-12 md:h-16 object-contain">
+                <!-- Add more logos as needed -->
+            </div>
+            <!-- <Stars /> -->
         </div>
     </div>
 </SectionWrapper>

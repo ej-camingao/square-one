@@ -4,27 +4,24 @@ import SectionWrapper from "./SectionWrapper.svelte";
     let productFeatures = [
         {
             featureList: [
-                "Daily Checks",
-                "Weighted Regression",
+                "Square One Builders is a contractor company with a strong focus on infrastructure projects, including the construction of highways and bridges. Their expertise in large-scale projects ensures durable, high-quality structures that enhance connectivity and support community development."
             ],
-            description: 'Square One Builders is grounded in Integrity',
-            imgUrl: 'assets/selection.png'
+            description: '',
+            imgUrl: 'assets/prod1.png'
         },
         {
             featureList: [
-                "Daily Checks",
-                "Weighted Regression",
+                "Square One Builders is a trusted contractor company with extensive experience in institutional projects, including schools, hospitals, and government buildings. Their focus on quality construction and timely delivery ensures that these vital facilities are built to serve communities effectively and sustainably."
             ],
-            description: 'Square One Builders is grounded in Truth',
-            imgUrl: 'assets/training.png'
+            description: '',
+            imgUrl: 'assets/prod2.png'
         },
         {
             featureList: [
-                "Daily Wows",
-                "Beautiful Builds",
+                "Square One Builders is a premier contractor company specializing in high-quality residential projects, known for their meticulous attention to detail and innovative designs. They are dedicated to transforming homes with exceptional craftsmanship and personalized service, ensuring every project exceeds client expectations."
             ],
-            description: 'Square One Builders is grounded in Love',
-            imgUrl: 'assets/goal.png'
+            description: '',
+            imgUrl: 'assets/prod3.png'
         }
     
     ]
@@ -33,18 +30,18 @@ import SectionWrapper from "./SectionWrapper.svelte";
 <SectionWrapper id="product">
     <div class="flex flex-col gap-10 sm:gap-14 md:gap-24 flex-1 items-center justify-center pb-10 md:pb-14">
         <div class="flex flex-col gap-2">
-            <p class="opacity-60 text-base sm:text-lg md:text-xl text-center">Build Your 
+            <p class="opacity-60 text-base sm:text-lg md:text-xl text-center">Building Your 
                 <span class="text-green-700"> Foundation</span>
             </p>
-            <h3 class="text-4xl sm:text-5xl md:text-6xl max-w-[1000px] mx-auto w-full font-semibold text-center">Features For Everyone</h3>
+            <h3 class="text-4xl sm:text-5xl md:text-6xl max-w-[1000px] mx-auto w-full font-semibold text-center">Wide Range of Construction</h3>
                 {#each productFeatures as productFeature, index}
                     <ProductCard productFeature={productFeature} index={index}>
                         {#if index===0}
-                        Experience a beginner exercise <span class="text-indigo-400 font-medium">master</span> class
+                        <span class="text-green-700 font-medium">Infrastructure</span> Projects
                         {:else if index===1}
-                        Lay the foundation for <span class="text-indigo-400 font-medium"> routine</span> and consistency
+                        <span class="text-green-700 font-medium">Institutional</span> Construction
                         {:else}
-                        Workouts specific to your <span class="text-indigo-400 font-medium">environment</span> and <span class="text-indigo-400 font-medium">expertise</span>
+                        <span class="text-green-700 font-medium">Residential</span> Units
                         {/if}
                     </ProductCard>
                 {/each}
