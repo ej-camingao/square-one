@@ -1,5 +1,14 @@
 <script>
     import {openModal} from '../store'
+  import CtAs from './CTAs.svelte';
+
+    import Overlay from './Overlay.svelte';
+
+    let showOverlay = false;
+
+    function toggleOverlay() {
+        showOverlay = !showOverlay;
+    }
 </script>
 
 <header class="flex flex-col relative z-20">
@@ -15,9 +24,10 @@
             <a href="#product"class="duration-200 hover:text-green-700 cursor-pointer">Projects</a>
             <a href="#reviews"class="duration-200 hover:text-green-700 cursor-pointer">Reviews</a>
             <!-- <a href="#faqs"class="duration-200 hover:text-green-700 cursor-pointer">FAQ</a> -->
-            <button class="specialBtn">
-                <p>Contact Us</p>                    
-            </button>
+            <!-- <button class="specialBtn" on:click={toggleOverlay}>
+                <p>Contact Us</p>                 
+            </button> -->
+            <CtAs/>
         </nav>
     </div>
 </header>

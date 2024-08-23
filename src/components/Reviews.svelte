@@ -71,7 +71,7 @@
                     <ReviewCard {reviewItem} left={true} {index} />
                 {/each}
             </div>
-            <div class="w-[1px] bg-green-500 hidden md:flex"></div>
+            <div class="w-[1px] bg-slate-950 hidden md:flex"></div>
             <div class="flex flex-col gap-8">
                 {#each lim ? reviewsList.slice(0, 4) : reviewsList as reviewItem, index}
                     <ReviewCard {reviewItem} {index} />

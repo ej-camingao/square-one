@@ -11,7 +11,6 @@
         <div class="flex flex-col gap-4">
             <p class="font-bold poppins text-base sm:text-lg">Contact</p>
             <p>Canyon Rd., Beverly Hills, Lahug, Cebu City<br/>
-            032-342 0633<br/>
             squareone.builders@yahoo.com
             </p>          
         </div>

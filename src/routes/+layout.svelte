@@ -3,8 +3,10 @@
   import CtAs from "../components/CTAs.svelte";
   import Footer from "../components/Footer.svelte";
   import Header from "../components/Header.svelte";
+  import Overlay from "../components/Overlay.svelte";
 
   import {openModal} from "../store";
+  import {isOverlayOpen} from "../store";
 
   let y;
   $: outerHeight = 0;
@@ -15,6 +17,11 @@
 
   }
 </script>
+{#if $isOverlayOpen}
+  <Overlay>
+    <p>test</p>
+  </Overlay>
+{/if}
 
 {#if $openModal}
   <div class="fixed top-0 left-0 w-screen h-screen border-b bg-white z-50 flex flex-col gap-8 p-5 px-8 md:hidden">
@@ -34,7 +41,7 @@
             <p
                 class="duration-200 group-hover:pl-2 poppins text-3xl font-semibold"
             >
-                Project <i class="fa-solid fa-chevron-right text-xl pl-4" />
+                Projects <i class="fa-solid fa-chevron-right text-xl pl-4" />
             </p>
         </button>
         <button
@@ -70,12 +77,6 @@
   </div>
 {/if}
 <slot />
+
 <Footer />
 <svelte:window bind:scrollY={y} bind:outerHeight/>
-<!-- header
-hero
-prod description
-user reviews
-faq
-conversion
-footer -->

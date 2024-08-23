@@ -21,7 +21,7 @@ span {
 
 .bgGrid {
     background-size: 40px 40px;
-    background-image: linear-gradient(to right, grey 1px, transparent 1px), linear-gradient(to bottom, grey 1px, transparent 1px);
+    background-image: linear-gradient(to right, rgb(9, 59, 3) 1px, transparent 1px), linear-gradient(to bottom, rgb(9, 59, 3) 1px, transparent 1px);
 }
 
 button,
@@ -83,8 +83,35 @@ button:focus-visible{
 
 .bg-diamond-grid {
     background-image: 
-      linear-gradient(45deg, transparent 35%, #1a612c 45%), 
-      linear-gradient(-45deg, transparent 35%, #1a612c 45%);
+      linear-gradient(45deg, transparent 35%, #1a612c 60%), 
+      linear-gradient(-45deg, transparent 35%, #1a612c 60%);
     background-size: 20px 20px;
     background-position: 0 0, 10px 10px;
 }
+
+.bgDiamond {
+        background-size: 40px 40px;
+        background-image: 
+            linear-gradient(45deg, rgb(9, 59, 3) 25%, transparent 25%), 
+            linear-gradient(-45deg, rgb(9, 59, 3) 25%, transparent 25%);
+        background-position: 0 0, 20px 20px; /* Adjust according to size */
+        background-repeat: repeat;
+    
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+  }
+
+  .hidden {
+    display: none;
+  }
