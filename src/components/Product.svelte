@@ -33,7 +33,7 @@ import SectionWrapper from "./SectionWrapper.svelte";
             <p class="opacity-60 text-base sm:text-lg md:text-xl text-center">Building Your 
                 <span class="text-green-700"> Foundation</span>
             </p>
-            <h3 class="text-4xl sm:text-5xl md:text-6xl max-w-[1000px] mx-auto w-full font-semibold text-center">Wide Range of Construction</h3>
+            <h3 class="text-4xl sm:text-5xl md:text-6xl max-w-[1000px] mx-auto w-full font-semibold text-center">Projects</h3>
                 {#each productFeatures as productFeature, index}
                     <ProductCard productFeature={productFeature} index={index}>
                         {#if index===0}

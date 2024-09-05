@@ -21,13 +21,13 @@
             <i class="fa-solid fa-bars" style="color: #63E6BE;"></i>
         </button>
         <nav class="hidden md:flex items-center gap-4 lg:gap-6">
+            <a href="#about"class="duration-200 hover:text-green-700 cursor-pointer">About Us</a>
             <a href="#product"class="duration-200 hover:text-green-700 cursor-pointer">Projects</a>
-            <a href="#reviews"class="duration-200 hover:text-green-700 cursor-pointer">Reviews</a>
             <!-- <a href="#faqs"class="duration-200 hover:text-green-700 cursor-pointer">FAQ</a> -->
             <!-- <button class="specialBtn" on:click={toggleOverlay}>
                 <p>Contact Us</p>                 
             </button> -->
-            <CtAs/>
+            <!-- <CtAs/> -->
         </nav>
     </div>
 </header>

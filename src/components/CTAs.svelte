@@ -10,10 +10,10 @@
     <!-- <button class={"specialBtn " + (dark ? " bg-[#181b34]" : " ")}>
         <p class="text-base sm:text-lg md:text-xl">Contact Us</p>
     </button> -->
-    {$isOverlayOpen}
+    <!-- {$isOverlayOpen} -->
     <button class="specialBtnDark" on:click={() => {isOverlayOpen.set(true)}}>
         <p class="text-base sm:text-lg md:text-xl">
             Contact Us
         </p>
     </button>
-</div>
+</div> 

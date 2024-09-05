@@ -35,6 +35,7 @@ import CtAs from "./CTAs.svelte";
     </div>
 
     <div class="gap-2 text-base mb-20"><Carousel/></div>
+    
 
 
 </SectionHero>

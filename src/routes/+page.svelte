@@ -11,8 +11,9 @@ import FAQs from "../components/FAQs.svelte";
 
 <main class="flex flex-col">
     <Hero />
-    <Product />
     <Reviews />
-    <!-- <FAQs/> -->
     <!-- <Conversion/> -->
+    <Product />
+    <!-- <FAQs/> -->
+    
 </main>
